@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Lock",
+    "exec": "swaylock --screenshots --key-hl-color FF8941 --indicator --indicator-radius 150 --clock --fade-in 0.2 --effect-vignette 0.7:0.7 --ring-color FFC041 --effect-blur 10x6",
+    "icon": "/usr/share/nwg-bar/images/system-lock-screen.svg"
+  },
+  {
+    "label": "Logout",
+    "exec": "niri msg action quit",
+    "icon": "/usr/share/nwg-bar/images/system-log-out.svg"
+  },
+  {
+    "label": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/usr/share/nwg-bar/images/system-reboot.svg"
+  },
+  {
+    "label": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/usr/share/nwg-bar/images/system-shutdown.svg"
+  },
+  {
+    "label": "Hibernate",
+    "exec": "swaylock -i /home/nfoert/Pictures/wallpaper.png && sleep 1 && systemctl hibernate",
+    "icon": "/usr/share/nwg-bar/images/system-hibernate.svg"
+  },
+  {
+    "label": "Suspend",
+    "exec": "swaylock -i /home/nfoert/Pictures/wallpaper.png && sleep 1 && systemctl suspend",
+    "icon": "/usr/share/nwg-bar/images/system-suspend.svg"
+  }
+]
