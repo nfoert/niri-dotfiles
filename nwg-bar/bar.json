@@ -21,12 +21,12 @@
   },
   {
     "label": "Hibernate",
-    "exec": "swaylock -i /home/nfoert/Pictures/wallpaper.png && sleep 1 && systemctl hibernate",
+    "exec": "systemctl hibernate",
     "icon": "/usr/share/nwg-bar/images/system-hibernate.svg"
   },
   {
     "label": "Suspend",
-    "exec": "swaylock -i /home/nfoert/Pictures/wallpaper.png && sleep 1 && systemctl suspend",
+    "exec": "swaylock --screenshots --key-hl-color FF8941 --indicator --indicator-radius 150 --clock --fade-in 0.2 --effect-vignette 0.7:0.7 --ring-color FFC041 --effect-blur 10x6 -f && sleep 1 && systemctl suspend",
     "icon": "/usr/share/nwg-bar/images/system-suspend.svg"
   }
 ]

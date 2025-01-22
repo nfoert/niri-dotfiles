@@ -215,6 +215,7 @@ spawn-at-startup "mako"
 spawn-at-startup "nm-applet"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "xwayland-satellite" ":1"
+spawn-at-startup "./scripts/suspend.sh"
 
 // You can override environment variables for processes spawned by niri.
 environment {
@@ -386,6 +387,15 @@ window-rule {
     clip-to-geometry true
 }
 
+// Open the Firefox Picture-in-Picture window at the bottom-left corner of the screen
+// with a small gap.
+window-rule {
+    match app-id="zen$" title="^Picture-in-Picture$"
+
+    open-floating true
+    default-floating-position x=32 y=32 relative-to="bottom-left"
+}
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -500,6 +510,9 @@ binds {
     Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }
     Mod+Shift+I         { move-workspace-up; }
+
+    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+V       { toggle-window-floating; }
 
     // You can refer to workspaces by index. However, keep in mind that
     // niri is a dynamic workspace system, so these commands are kind of

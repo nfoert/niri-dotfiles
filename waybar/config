@@ -1,35 +1,50 @@
 {
-	"layer": "top",
-	"modules-left": ["user", "cpu", "memory", "tray"],
-	"modules-center": ["clock"],
-	"modules-right": ["network", "bluetooth", "pulseaudio", "battery", "custom/power"],
-	
-	"pulseaudio": {
-		"tooltip": false,
-		"scroll-step": 5,
-		"format": "{icon} {volume}%",
-		"format-muted": "{icon} {volume}%",
-		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"format-icons": {
-			"default": ["", "", ""]
-		}
-	},
-
-    "river/tags": {
-		"num-tags": 6
+    "layer": "top",
+    "modules-left": [
+        "user",
+        "cpu",
+        "memory",
+        "tray"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "network",
+        "bluetooth",
+        "pulseaudio",
+        "battery",
+        "custom/power"
+    ],
+    "pulseaudio": {
+        "tooltip": false,
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-muted": "{icon} {volume}%",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "format-icons": {
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
     },
-	"network": {
-		"tooltip": false,
-		"format-wifi": "  {essid}",
-		"format-ethernet": "󰈀 {ifname} | {bandwidthUpBytes} {bandwidthDownBytes}"
-	},
-	"backlight": {
-		"tooltip": false,
-		"format": " {}%",
-		"interval":1,
+    "river/tags": {
+        "num-tags": 6
+    },
+    "network": {
+        "tooltip": false,
+        "format-wifi": "  {essid}",
+        "format-ethernet": "󰈀 {ifname} | {bandwidthUpBytes} {bandwidthDownBytes}"
+    },
+    "backlight": {
+        "tooltip": false,
+        "format": " {}%",
+        "interval": 1,
         "on-scroll-up": "light -A 5",
-		"on-scroll-down": "light -U 5"
-	},
+        "on-scroll-down": "light -U 5"
+    },
     "battery": {
         "states": {
             "good": 95,
@@ -40,14 +55,20 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
-	"tray":{
-		"icon-size":18,
-		"spacing": 10
-	},
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
     "clock": {
-        "format": " {:%H:%M %m/%d/%y}"
+        "format": " {:%I:%M %m/%d/%y}"
     },
     "cpu": {
         "interval": 15,
@@ -76,12 +97,12 @@
         "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
         "on-click": "playerctl play-pause"
     },
-    "custom/launcher":{
+    "custom/launcher": {
         "format": "∞",
         "on-click": "fuzzel",
         "on-click-right": "killall fuzzel"
     },
-    "custom/power":{
+    "custom/power": {
         "format": "",
         "on-click": "nwg-bar"
     },
