@@ -100,13 +100,19 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // It the position is unset or results in an overlap, the output is instead placed
     // automatically.
+    position x=0 y=1440
+}
+
+output "Acer Technologies XV272U V 42420FA1A4205" {
+    mode "2560x1440@60"
+
     position x=0 y=0
 }
 
 output "ViewSonic Corporation VX2452 Series TVT163705806" {
     mode "1920x1080@60"
 
-    position x=0 y=-1080
+    position x=0 y=0
 }
 
 output "Hitachi Information Technology Co., Ltd. Hichip TV 0x00000003" {
@@ -116,7 +122,7 @@ output "Hitachi Information Technology Co., Ltd. Hichip TV 0x00000003" {
     // scale 1.0
 
     scale 1.5
-    position x=0 y=-720
+    position x=0 y=0
 }
 
 layout {
@@ -275,7 +281,8 @@ spawn-at-startup "mako"
 spawn-at-startup "nm-applet"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "xwayland-satellite" ":1"
-spawn-at-startup "./scripts/suspend.sh"
+spawn-at-startup "~/.config/niri/scripts/suspend.sh"
+spawn-at-startup "flatpak" "run" "app.zen_browser.zen"
 
 // You can override environment variables for processes spawned by niri.
 environment {
@@ -460,6 +467,20 @@ window-rule {
     match app-id="foot"
 
     default-column-width { proportion 0.4; }
+}
+
+window-rule {
+    match app-id="zen$"
+
+    draw-border-with-background false
+    clip-to-geometry true
+}
+
+// Godot
+window-rule {
+    match app-id="Godot" title="Create New Node"
+    open-floating true
+    default-window-height { fixed 750; }
 }
 
 layer-rule {

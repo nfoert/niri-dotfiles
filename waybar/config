@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "modules-left": [
-        "user",
+        "niri/workspaces",
         "cpu",
         "memory",
         "tray"
@@ -72,7 +72,7 @@
     },
     "cpu": {
         "interval": 15,
-        "format": " {}%",
+        "format": " {max_frequency}",
         "max-length": 10
     },
     "memory": {
@@ -117,5 +117,12 @@
     },
     "custom/notifications": {
         "format": ""
+    },
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
     }
 }

@@ -239,3 +239,38 @@ window#waybar.hidden {
 	border: 2px solid rgb(69, 71, 87);
 	border-radius: 10px;
 }
+
+#workspaces {
+	font-size: 14px;
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	transition: none;
+
+	color: white;
+	background-color: rgba(41, 42, 52, 0.8);
+	border: 2px solid rgb(69, 71, 87);
+	border-radius: 10px;
+}
+
+#workspaces button {
+	font-size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#workspaces button.focused {
+	background-color: rgb(69, 71, 87);
+	color: white;
+}
+
+#workspaces button.active {
+	background-color: rgb(69, 71, 87);
+	color: white;
+}
