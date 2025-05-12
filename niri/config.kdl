@@ -178,7 +178,7 @@ layout {
         // off
 
         width 2
-        active-color "#ffc87f"
+        active-color "#29A855"
         inactive-color "#505050"
 
         // active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
@@ -282,6 +282,7 @@ spawn-at-startup "nm-applet"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "xwayland-satellite" ":1"
 spawn-at-startup "~/.config/niri/scripts/suspend.sh"
+spawn-at-startup "~/.config/niri/scripts/rotate-wallpaper.sh"
 spawn-at-startup "flatpak" "run" "app.zen_browser.zen"
 
 // You can override environment variables for processes spawned by niri.
