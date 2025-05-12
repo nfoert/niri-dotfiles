@@ -20,6 +20,14 @@ cp ./fuzzel/fuzzel.ini /etc/xdg/fuzzel/fuzzel.ini
 cp ./nwg-bar/bar.json ~/.config/nwg-bar/bar.json
 cp ./nwg-bar/style.css ~/.config/nwg-bar/style.css
 cp ./mako/config ~/.config/mako/config
+
+echo -e "${YELLOW}Do you want to copy wallpapers? (y/n)${NC}"
+read copy_wallpapers
+if [ "$copy_wallpapers" = "y" ]; then
+    cp ./wallpapers/* ~/Pictures/Wallpapers
+    echo -e "${GREEN}Wallpapers copied to ${GRAY}${HOME}/Pictures/Wallpapers${NC}"
+fi
+
 echo -e "${NC}"
 
 echo -e "\n${GREEN}${BOLD}Done!${NC}"
