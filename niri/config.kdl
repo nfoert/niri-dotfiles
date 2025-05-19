@@ -484,6 +484,13 @@ window-rule {
     default-window-height { fixed 750; }
 }
 
+// Minecraft
+window-rule {
+    match title=".*Minecraft.*"
+
+    open-fullscreen true
+}
+
 layer-rule {
     match namespace="^launcher$"
     
@@ -532,6 +539,8 @@ binds {
     
     XF86MonBrightnessUp { spawn "brightnessctl" "set" "+5%"; }
     XF86MonBrightnessDown { spawn "brightnessctl" "set" "5%-"; }
+
+    Mod+O { toggle-overview; }
 
     Mod+Q { close-window; }
 
@@ -653,7 +662,9 @@ binds {
     Mod+R { switch-preset-column-width; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
+    Mod+Ctrl+Shift+F { toggle-windowed-fullscreen; }
     Mod+C { center-column; }
+    Mod+Ctrl+C { center-visible-columns; }
 
     // Finer width adjustments.
     // This command can also:
