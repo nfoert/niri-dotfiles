@@ -100,7 +100,7 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // It the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=0 y=1440
+    position x=0 y=1080
 }
 
 output "Acer Technologies XV272U V 42420FA1A4205" {
@@ -110,6 +110,12 @@ output "Acer Technologies XV272U V 42420FA1A4205" {
 }
 
 output "ViewSonic Corporation VX2452 Series TVT163705806" {
+    mode "1920x1080@60"
+
+    position x=0 y=0
+}
+
+output "ViewSonic Corporation VX2452 Series TVT163705202" {
     mode "1920x1080@60"
 
     position x=0 y=0
