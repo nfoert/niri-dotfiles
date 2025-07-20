@@ -286,7 +286,6 @@ spawn-at-startup "fuzzel"
 spawn-at-startup "mako"
 spawn-at-startup "nm-applet"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "xwayland-satellite" ":1"
 spawn-at-startup "~/.config/niri/scripts/suspend.sh"
 spawn-at-startup "~/.config/niri/scripts/rotate-wallpaper.sh"
 spawn-at-startup "~/.config/niri/scripts/battery.sh"
@@ -296,9 +295,6 @@ spawn-at-startup "flatpak" "run" "app.zen_browser.zen"
 environment {
     // Set a variable like this:
     // QT_QPA_PLATFORM "wayland"
-
-    // Remove a variable by using null as the value:
-    DISPLAY ":1"
 }
 
 cursor {
@@ -496,6 +492,14 @@ window-rule {
     match title=".*Minecraft.*"
 
     open-fullscreen true
+}
+
+// deck-display
+window-rule {
+    match app-id="deck-display"
+
+    min-width 320
+    min-height 240
 }
 
 layer-rule {

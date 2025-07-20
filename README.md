@@ -36,8 +36,6 @@ Several scripts are included in this repo
 - `nwg-bar`
 - `waybar`
 - `swaylock`
-- `xwayland-satellite`
-
 
 ## To-Do
 - [x] Make `xwayland-satellite` start on compositor start
