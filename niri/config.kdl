@@ -286,6 +286,7 @@ spawn-at-startup "fuzzel"
 spawn-at-startup "mako"
 spawn-at-startup "nm-applet"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "xwayland-satellite" ":1"
 spawn-at-startup "~/.config/niri/scripts/suspend.sh"
 spawn-at-startup "~/.config/niri/scripts/rotate-wallpaper.sh"
 spawn-at-startup "~/.config/niri/scripts/battery.sh"
@@ -295,6 +296,8 @@ spawn-at-startup "flatpak" "run" "app.zen_browser.zen"
 environment {
     // Set a variable like this:
     // QT_QPA_PLATFORM "wayland"
+    
+    DISPLAY ":1"
 }
 
 cursor {
