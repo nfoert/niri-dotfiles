@@ -499,10 +499,14 @@ window-rule {
 
 // deck-display
 window-rule {
-    match app-id="deck-display"
+    match app-id="desk-display" title="Desk Display"
 
     min-width 320
+    max-width 320
     min-height 240
+    max-height 240
+    default-window-height { fixed 240; }
+    default-column-width { fixed 320; }
 }
 
 layer-rule {
