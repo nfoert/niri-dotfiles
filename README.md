@@ -32,6 +32,11 @@ Several scripts are included in this repo
 - `rotate-wallpaper-once` - Switches to a new random wallpaper when `Super+S` is pressed
 - `battery` - Watches the battery level, and if it gets too low the screen will dim and eventually the system will hibernate
 
+## Keybinds
+A few custom keybinds are added to provide some utility
+- **Super+S** - Switches to a new random wallpaper
+- **Super+M** - Toggles the auto suspend mode (For when you want to temporarily prevent auto suspend)
+
 ## Required Packages
 - `niri`
 - `fuzzel`

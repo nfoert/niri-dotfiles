@@ -544,6 +544,7 @@ binds {
     Ctrl+Alt+C hotkey-overlay-title="Open VSCodium" { spawn "codium" "--ozone-platform-hint=auto" "--enable-features=WaylandWindowDecorations"; }
 
     Mod+S hotkey-overlay-title="Shuffle wallpaper" { spawn "~/.config/niri/scripts/rotate-wallpaper-once.sh"; }
+    Mod+M hotkey-overlay-title="Toggle auto suspend" { spawn "~/.config/niri/scripts/suspend.sh"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     XF86AudioRaiseVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
