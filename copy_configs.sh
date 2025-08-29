@@ -12,6 +12,13 @@ echo -e "${YELLOW}Press ${BOLD}enter${NC}${YELLOW} to copy all configuration fil
 read
 
 echo -e "${GRAY}"
+
+mkdir -p ~/.config/niri/scripts
+mkdir -p ~/.config/waybar
+mkdir -p /etc/xdg/fuzzel
+mkdir -p ~/.config/nwg-bar
+mkdir -p ~/.config/mako
+
 cp ./niri/config.kdl ~/.config/niri/config.kdl
 cp ./niri/scripts/* ~/.config/niri/scripts
 cp ./waybar/config ~/.config/waybar/config
@@ -24,6 +31,7 @@ cp ./mako/config ~/.config/mako/config
 echo -e "${YELLOW}Do you want to copy wallpapers? (y/n)${NC}"
 read copy_wallpapers
 if [ "$copy_wallpapers" = "y" ]; then
+    mkdir -p ~/Pictures/Wallpapers
     cp ./wallpapers/* ~/Pictures/Wallpapers
     echo -e "${GREEN}Wallpapers copied to ${GRAY}${HOME}/Pictures/Wallpapers${NC}"
 fi

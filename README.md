@@ -51,6 +51,7 @@ A few custom keybinds are added to provide some utility
 - [x] Make `xwayland-satellite` start on compositor start
 - [ ] Make a customized terminal
 - [x] Add a script for warning when the battery is running low (and also lowers brightness) and automatically hibernates when it's at critical levels
+- [ ] Describe how to get waybar fonts and icons working
 
 ## Credits
 All wallpapers are from various users on [Wallhaven](https://wallhaven.cc)
