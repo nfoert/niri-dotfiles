@@ -497,7 +497,7 @@ window-rule {
     open-fullscreen true
 }
 
-// deck-display
+// desk-display
 window-rule {
     match app-id="desk-display" title="Desk Display"
 
@@ -507,6 +507,8 @@ window-rule {
     max-height 240
     default-window-height { fixed 240; }
     default-column-width { fixed 320; }
+
+    default-floating-position x=32 y=32 relative-to="bottom-right"
 }
 
 layer-rule {
