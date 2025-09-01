@@ -20,6 +20,7 @@ mkdir ./nwg-bar
 mkdir ./mako
 mkdir ./wallpapers
 mkdir ./zsh
+mkdir ./kitty
 
 cp ~/.config/niri/config.kdl ./niri/config.kdl
 cp ~/.config/niri/scripts/* ./niri/scripts
@@ -32,6 +33,7 @@ cp ~/.config/mako/config ./mako/config
 cp ~/Pictures/Wallpapers/* ./wallpapers
 cp ~/.zshrc ./zsh/.zshrc
 cp ~/.p10k.zsh ./zsh/.p10k.zsh
+cp ~/.config/kitty/kitty.conf ./kitty/kitty.conf
 echo -e "${NC}"
 
 echo -e "\n${GREEN}${BOLD}Done!${NC}"
