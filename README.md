@@ -46,6 +46,7 @@ A few custom keybinds are added to provide some utility
 - `waybar`
 - `swaylock`
 - `xwayland-satellite`
+- `ttf-0xproto-nerd`
 
 ## To-Do
 - [x] Make `xwayland-satellite` start on compositor start
