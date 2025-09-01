@@ -15,7 +15,7 @@ echo -e "${GRAY}"
 
 mkdir -p ~/.config/niri/scripts
 mkdir -p ~/.config/waybar
-mkdir -p /etc/xdg/fuzzel
+mkdir -p ~/.config/fuzzel
 mkdir -p ~/.config/nwg-bar
 mkdir -p ~/.config/mako
 
@@ -23,7 +23,7 @@ cp ./niri/config.kdl ~/.config/niri/config.kdl
 cp ./niri/scripts/* ~/.config/niri/scripts
 cp ./waybar/config ~/.config/waybar/config
 cp ./waybar/style.css ~/.config/waybar/style.css
-cp ./fuzzel/fuzzel.ini /etc/xdg/fuzzel/fuzzel.ini
+cp ./fuzzel/fuzzel.ini ~/.config/fuzzel/fuzzel.ini
 cp ./nwg-bar/bar.json ~/.config/nwg-bar/bar.json
 cp ./nwg-bar/style.css ~/.config/nwg-bar/style.css
 cp ./mako/config ~/.config/mako/config

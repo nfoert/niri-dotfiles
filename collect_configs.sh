@@ -24,7 +24,7 @@ cp ~/.config/niri/config.kdl ./niri/config.kdl
 cp ~/.config/niri/scripts/* ./niri/scripts
 cp ~/.config/waybar/config ./waybar/config
 cp ~/.config/waybar/style.css ./waybar/style.css
-cp /etc/xdg/fuzzel/fuzzel.ini ./fuzzel/fuzzel.ini
+cp ~/.config/fuzzel/fuzzel.ini ./fuzzel/fuzzel.ini
 cp ~/.config/nwg-bar/bar.json ./nwg-bar/bar.json
 cp ~/.config/nwg-bar/style.css ./nwg-bar/style.css
 cp ~/.config/mako/config ./mako/config
