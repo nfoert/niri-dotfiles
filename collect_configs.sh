@@ -19,6 +19,7 @@ mkdir ./fuzzel
 mkdir ./nwg-bar
 mkdir ./mako
 mkdir ./wallpapers
+mkdir ./zsh
 
 cp ~/.config/niri/config.kdl ./niri/config.kdl
 cp ~/.config/niri/scripts/* ./niri/scripts
@@ -29,6 +30,8 @@ cp ~/.config/nwg-bar/bar.json ./nwg-bar/bar.json
 cp ~/.config/nwg-bar/style.css ./nwg-bar/style.css
 cp ~/.config/mako/config ./mako/config
 cp ~/Pictures/Wallpapers/* ./wallpapers
+cp ~/.zshrc ./zsh/.zshrc
+cp ~/.p10k.zsh ./zsh/.p10k.zsh
 echo -e "${NC}"
 
 echo -e "\n${GREEN}${BOLD}Done!${NC}"
