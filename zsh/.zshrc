@@ -80,7 +80,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
     git
     battery
-    zsh-autosuggestions
     command-not-found
     bgnotify
 )
