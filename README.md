@@ -47,6 +47,7 @@ A few custom keybinds are added to provide some utility
 - `swaylock-effects`
 - `xwayland-satellite`
 - `kitty`
+- `power-profiles-daemon`
 - `ttf-0xproto-nerd`
 - `zsh`
   - [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh#basic-installation)

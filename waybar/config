@@ -14,6 +14,7 @@
         "bluetooth",
         "pulseaudio",
         "battery",
+        "power-profiles-daemon",
         "custom/power"
     ],
     "pulseaudio": {
@@ -72,7 +73,7 @@
     },
     "cpu": {
         "interval": 15,
-        "format": " {max_frequency}",
+        "format": " {usage}%",
         "max-length": 10
     },
     "memory": {
@@ -123,6 +124,17 @@
         "format-icons": {
             "active": "",
             "default": ""
+        }
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}  {profile}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
         }
     }
 }
