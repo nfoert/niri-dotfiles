@@ -48,6 +48,10 @@ A few custom keybinds are added to provide some utility
 - `xwayland-satellite`
 - `kitty`
 - `power-profiles-daemon`
+- `sddm`
+  - `libqt5‑qtgraphicaleffects`
+  - `libqt5‑qtquickcontrols2`
+  - `libQt5Svg5`
 - `ttf-0xproto-nerd`
 - `zsh`
   - [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh#basic-installation)

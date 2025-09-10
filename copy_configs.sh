@@ -44,6 +44,16 @@ if [ "$copy_wallpapers" = "y" ]; then
     echo -e "${GREEN}Wallpapers copied to ${GRAY}${HOME}/Pictures/Wallpapers${NC}"
 fi
 
+echo -e "${YELLOW}Do you want to apply a SDDM theme? (sugar-candy) (y/n)${NC}"
+echo -e "${GRAY}This operation will require root permissions${NC}"
+read copy_sddm
+if [ "$copy_sddm" = "y" ]; then
+    sudo cp ./sddm/sddm.conf /etc/sddm.conf
+    mkdir -p /usr/share/sddm/themes
+    sudo cp -r ./sddm/sugar-candy /usr/share/sddm/themes
+    echo -e "${GREEN}SDDM theme copied to ${GRAY}/usr/share/sddm/themes${NC}"
+fi
+
 echo -e "${NC}"
 
 echo -e "\n${GREEN}${BOLD}Done!${NC}"
