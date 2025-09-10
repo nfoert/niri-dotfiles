@@ -11,14 +11,14 @@
 
 ## Installation
 > [!NOTE]
-> These scripts place config files into the correct places for Open SUSE Tumbleweed. I expect the locations to be similar if not the same on other distros, but some adjustments of the copy and collection scripts might be necessary
+> These scripts place config files into the correct places for Arch Linux. I expect the locations to be similar if not the same on other distros, but some adjustments of the copy and collection scripts might be necessary
 
-First, Install all of the [required packages](#required-packages). Then, run the following shell script to install of the config files to their correct place
+First, Install all the [required packages](#required-packages). Then, run the following shell script to install the config files to their correct place
 ```bash
 sh copy_configs.sh
 ```
 
-You will be asked if you also want to copy the wallpapers to your system
+You will be asked if you also want to copy the wallpapers and SDDM theme to your system
 
 If you make changes to the config files and want to back them up inside this repository, run this command:
 ```bash
@@ -38,6 +38,11 @@ A few custom keybinds are added to provide some utility
 - **Super+M** - Toggles the auto suspend mode (For when you want to temporarily prevent auto suspend)
 
 ## Required Packages
+These packages can be automatically installed for some distros using the following:
+```bash
+sh install_dependecies.sh
+```
+
 - `niri`
 - `fuzzel`
 - `mako`
@@ -49,9 +54,9 @@ A few custom keybinds are added to provide some utility
 - `kitty`
 - `power-profiles-daemon`
 - `sddm`
-  - `libqt5‑qtgraphicaleffects`
-  - `libqt5‑qtquickcontrols2`
-  - `libQt5Svg5`
+  - `qt5‑graphicaleffects`
+  - `qt5‑quickcontrols2`
+  - `qt5‑svg`
 - `ttf-0xproto-nerd`
 - `zsh`
   - [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
