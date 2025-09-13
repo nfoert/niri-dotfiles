@@ -36,7 +36,7 @@ cp ~/.zshrc ./zsh/.zshrc
 cp ~/.p10k.zsh ./zsh/.p10k.zsh
 cp ~/.config/kitty/kitty.conf ./kitty/kitty.conf
 cp /etc/sddm.conf ./sddm/sddm.conf
-cp -r /usr/share/sddm/themes/sugar-candy ./sddm/sugar-candy
+cp -r /usr/share/sddm/themes/sugar-candy ./sddm/
 echo -e "${NC}"
 
 echo -e "\n${GREEN}${BOLD}Done!${NC}"
