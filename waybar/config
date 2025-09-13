@@ -4,7 +4,8 @@
         "niri/workspaces",
         "cpu",
         "memory",
-        "tray"
+        "tray",
+        "custom/music"
     ],
     "modules-center": [
         "clock"
@@ -31,13 +32,10 @@
             ]
         }
     },
-    "river/tags": {
-        "num-tags": 6
-    },
     "network": {
         "tooltip": false,
         "format-wifi": "  {essid}",
-        "format-ethernet": "󰈀 {ifname} | {bandwidthUpBytes} {bandwidthDownBytes}"
+        "format-ethernet": "󰈀 {ifname} | {bandwidthUpBytes} {bandwidthDownBytes}",
     },
     "backlight": {
         "tooltip": false,
@@ -55,7 +53,7 @@
         "format": "{icon}  {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
+        "format-alt": "{icon} {time}",
         "format-icons": [
             "",
             "",
@@ -82,21 +80,14 @@
         "max-length": 10
     },
     "bluetooth": {
-        "format": " {status} {device_alias}",
+        "format": " {status}",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
         "on-click": "blueman-manager"
-    },
-    "custom/media": {
-        "interval": 30,
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 20,
-        "format-icons": {
-            "spotify": " ",
-            "default": " "
-        },
-        "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-        "on-click": "playerctl play-pause"
     },
     "custom/launcher": {
         "format": "∞",
@@ -104,7 +95,7 @@
         "on-click-right": "killall fuzzel"
     },
     "custom/power": {
-        "format": "",
+        "format": "⏻",
         "on-click": "nwg-bar"
     },
     "user": {
@@ -136,5 +127,12 @@
             "balanced": "",
             "power-saver": ""
         }
+    },
+    "custom/music": {
+        "exec": "$HOME/.config/waybar/scripts/spotify.sh",
+        "interval": 2,
+        "on-click":"playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
     }
 }

@@ -26,6 +26,7 @@ mkdir ./sddm
 cp ~/.config/niri/config.kdl ./niri/config.kdl
 cp ~/.config/niri/scripts/* ./niri/scripts
 cp ~/.config/waybar/config ./waybar/config
+cp -r ~/.config/waybar/scripts ./waybar/
 cp ~/.config/waybar/style.css ./waybar/style.css
 cp ~/.config/fuzzel/fuzzel.ini ./fuzzel/fuzzel.ini
 cp ~/.config/nwg-bar/bar.json ./nwg-bar/bar.json

@@ -27,6 +27,7 @@ mkdir -p ~/.config/kitty
 cp ./niri/config.kdl ~/.config/niri/config.kdl
 cp ./niri/scripts/* ~/.config/niri/scripts
 cp ./waybar/config ~/.config/waybar/config
+cp -r ./waybar/scripts ~/.config/waybar
 cp ./waybar/style.css ~/.config/waybar/style.css
 cp ./fuzzel/fuzzel.ini ~/.config/fuzzel/fuzzel.ini
 cp ./nwg-bar/bar.json ~/.config/nwg-bar/bar.json
