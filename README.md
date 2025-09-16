@@ -36,6 +36,7 @@ Several scripts are included in this repo
 A few custom keybinds are added to provide some utility
 - **Super+S** - Switches to a new random wallpaper
 - **Super+M** - Toggles the auto suspend mode (For when you want to temporarily prevent auto suspend)
+- **Super+P** - Cycles between power profiles using `powerprofilesctl`
 
 ## Required Packages
 These packages can be automatically installed for some distros using the following:
