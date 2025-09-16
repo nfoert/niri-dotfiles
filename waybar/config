@@ -51,9 +51,9 @@
             "critical": 20
         },
         "format": "{icon}  {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{icon} {time}",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{icon}  {time}",
         "format-icons": [
             "",
             "",
@@ -67,16 +67,16 @@
         "spacing": 10
     },
     "clock": {
-        "format": " {:%I:%M %m/%d/%y}"
+        "format": "  {:%I:%M %m/%d/%y}"
     },
     "cpu": {
         "interval": 15,
-        "format": " {usage}%",
+        "format": "  {usage}%",
         "max-length": 10
     },
     "memory": {
         "interval": 15,
-        "format": " {}%",
+        "format": "  {}%",
         "max-length": 10
     },
     "bluetooth": {
