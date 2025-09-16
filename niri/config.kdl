@@ -540,7 +540,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
-    Mod+D { spawn "fuzzel"; }
+    Mod+D { spawn "anyrun"; }
     Mod+Alt+L hotkey-overlay-title="Lock screen" { spawn "swaylock" "--screenshots" "--key-hl-color" "FF8941" "--indicator" "--indicator-radius" "150" "--clock" "--fade-in" "0.2" "--effect-vignette" "0.7:0.7" "--ring-color" "FFC041" "--effect-blur" "10x6"; }
     Ctrl+Alt+T hotkey-overlay-title="Open terminal" { spawn "kitty"; }
     Ctrl+Alt+F hotkey-overlay-title="Open dolphin" { spawn "dolphin"; }

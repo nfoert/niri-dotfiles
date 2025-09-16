@@ -1,0 +1,74 @@
+* {
+    color: white;
+}
+
+window {
+    background: transparent;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+box.main {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(41, 42, 52, 0.8);
+    border: 2px solid rgb(69, 71, 87);
+    box-shadow: 0 0 5px black;
+    animation: show 0.2s ease-in-out;
+}
+
+text {
+    min-height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.matches {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+box.plugin:first-child {
+    margin-top: 5px;
+}
+
+box.plugin.info {
+    min-width: 200px;
+}
+
+list.plugin {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+label.match.description {
+    font-size: 10px;
+}
+
+label.plugin.info {
+    font-size: 14px;
+}
+
+.match {
+    background: transparent;
+    transition: opacity 0.2s ease-in-out;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 1px;
+}
+
+.match:selected {
+    background-color: rgba(97, 99, 119, 0.8);
+    border-radius: 10px;
+}

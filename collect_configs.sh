@@ -28,7 +28,8 @@ cp ~/.config/niri/scripts/* ./niri/scripts
 cp ~/.config/waybar/config ./waybar/config
 cp -r ~/.config/waybar/scripts ./waybar/
 cp ~/.config/waybar/style.css ./waybar/style.css
-cp ~/.config/fuzzel/fuzzel.ini ./fuzzel/fuzzel.ini
+cp ~/.config/anyrun/config.ron ./anyrun/config.ron
+cp ~/.config/anyrun/style.css ./anyrun/style.css
 cp ~/.config/nwg-bar/bar.json ./nwg-bar/bar.json
 cp ~/.config/nwg-bar/style.css ./nwg-bar/style.css
 cp ~/.config/mako/config ./mako/config

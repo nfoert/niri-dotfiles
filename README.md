@@ -45,7 +45,7 @@ sh install_dependecies.sh
 ```
 
 - `niri`
-- `fuzzel`
+- `anyrun`
 - `mako`
 - `swww`
 - `nwg-bar`

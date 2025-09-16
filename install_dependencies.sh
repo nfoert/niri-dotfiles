@@ -23,7 +23,7 @@ if [ "$DISTRO" = "arch" ]; then
 
     echo -e "${NC}"
 
-    echo -e "${YELLOW}${BOLD}swaylock-effects${NC}${YELLOW} will need to be installed from the AUR using something like ${GRAY}yay -S swaylock-effects${NC}"
+    echo -e "${YELLOW}${BOLD}swaylock-effects${NC}${YELLOW} and ${NC}${YELLOW}${BOLD}anyrun${NC}${YELLOW} will need to be installed from the AUR using something like ${GRAY}yay -S swaylock-effects anyrun${NC}"
     echo -e "    ${GRAY}- https://aur.archlinux.org/packages/swaylock-effects${NC}"
 else
     echo -e "${RED}You're using an unsupported distro. Please open an issue or PR to expand this installer!${NC}"
