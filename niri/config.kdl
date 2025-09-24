@@ -286,7 +286,6 @@ spawn-at-startup "fuzzel"
 spawn-at-startup "mako"
 spawn-at-startup "nm-applet"
 spawn-at-startup "swww-daemon"
-spawn-at-startup "xwayland-satellite" ":1"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "~/.config/niri/scripts/suspend.sh"
 spawn-at-startup "~/.config/niri/scripts/rotate-wallpaper.sh"
@@ -297,15 +296,13 @@ spawn-at-startup "flatpak" "run" "app.zen_browser.zen"
 environment {
     // Set a variable like this:
     // QT_QPA_PLATFORM "wayland"
-    
-    DISPLAY ":1"
 }
 
 cursor {
     // Change the theme and size of the cursor as well as set the
     // `XCURSOR_THEME` and `XCURSOR_SIZE` env variables.
-    xcursor-theme "breeze_cursors"
-    xcursor-size 16
+    xcursor-theme "breeze"
+    xcursor-size 12
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
