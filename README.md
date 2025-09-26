@@ -62,6 +62,8 @@ sh install_dependecies.sh
 - `zsh`
   - [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
   - [`powerline10k`](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+  - [`zsh-autocomplete`](https://github.com/marlonrichert/zsh-autocomplete)
+  - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions)
 
 ## To-Do
 - [x] Make `xwayland-satellite` start on compositor start

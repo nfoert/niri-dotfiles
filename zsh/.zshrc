@@ -82,6 +82,8 @@ plugins=(
     battery
     command-not-found
     bgnotify
+    zsh-autocomplete
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
