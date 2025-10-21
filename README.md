@@ -58,6 +58,7 @@ sh install_dependecies.sh
   - `qt5‑graphicaleffects`
   - `qt5‑quickcontrols2`
   - `qt5‑svg`
+- `syshud`
 - `ttf-0xproto-nerd`
 - `zsh`
   - [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh#basic-installation)

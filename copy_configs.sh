@@ -23,6 +23,7 @@ mkdir -p ~/.config/fuzzel
 mkdir -p ~/.config/nwg-bar
 mkdir -p ~/.config/mako
 mkdir -p ~/.config/kitty
+mkdir -p ~/.config/sys64/hud
 
 cp ./niri/config.kdl ~/.config/niri/config.kdl
 cp ./niri/scripts/* ~/.config/niri/scripts
@@ -37,6 +38,7 @@ cp ./mako/config ~/.config/mako/config
 cp ./zsh/.zshrc ~/.zshrc
 cp ./zsh/.p10k.zsh ~/.p10k.zsh
 cp ./kitty/kitty.conf ~/.config/kitty/kitty.conf
+cp ./sys64/hud/* ~/.config/sys64/hud
 
 echo -e "${YELLOW}Do you want to copy wallpapers? (y/n)${NC}"
 read copy_wallpapers

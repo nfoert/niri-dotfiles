@@ -22,6 +22,8 @@ mkdir ./wallpapers
 mkdir ./zsh
 mkdir ./kitty
 mkdir ./sddm
+mkdir ./sys64
+mkdir ./sys64/hud
 
 cp ~/.config/niri/config.kdl ./niri/config.kdl
 cp ~/.config/niri/scripts/* ./niri/scripts
@@ -39,6 +41,7 @@ cp ~/.p10k.zsh ./zsh/.p10k.zsh
 cp ~/.config/kitty/kitty.conf ./kitty/kitty.conf
 cp /etc/sddm.conf ./sddm/sddm.conf
 cp -r /usr/share/sddm/themes/sugar-candy ./sddm/
+cp ~/.config/sys64/hud/style.css ./sys64/hud/style.css
 echo -e "${NC}"
 
 echo -e "\n${GREEN}${BOLD}Done!${NC}"
