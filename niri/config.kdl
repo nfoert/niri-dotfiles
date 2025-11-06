@@ -297,6 +297,7 @@ spawn-at-startup "flatpak" "run" "app.zen_browser.zen"
 environment {
     // Set a variable like this:
     // QT_QPA_PLATFORM "wayland"
+    _JAVA_AWT_WM_NONREPARENTING "1"
 }
 
 cursor {
@@ -541,7 +542,7 @@ binds {
     Mod+D { spawn "anyrun"; }
     Mod+Alt+L hotkey-overlay-title="Lock screen" { spawn "swaylock" "--screenshots" "--key-hl-color" "FF8941" "--indicator" "--indicator-radius" "150" "--clock" "--fade-in" "0.2" "--effect-vignette" "0.7:0.7" "--ring-color" "FFC041" "--effect-blur" "10x6"; }
     Ctrl+Alt+T hotkey-overlay-title="Open terminal" { spawn "kitty"; }
-    Ctrl+Alt+F hotkey-overlay-title="Open dolphin" { spawn "dolphin"; }
+    Ctrl+Alt+F hotkey-overlay-title="Open dolphin" { spawn "nautilus"; }
     Ctrl+Alt+C hotkey-overlay-title="Open VSCodium" { spawn "codium" "--ozone-platform-hint=auto" "--enable-features=WaylandWindowDecorations"; }
 
     Mod+S hotkey-overlay-title="Shuffle wallpaper" { spawn "~/.config/niri/scripts/rotate-wallpaper-once.sh"; }
