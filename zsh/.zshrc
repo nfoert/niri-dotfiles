@@ -82,7 +82,7 @@ plugins=(
     battery
     command-not-found
     bgnotify
-    zsh-autocomplete
+    # zsh-autocomplete
     zsh-autosuggestions
 )
 
