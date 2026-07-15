@@ -41,7 +41,7 @@ A few custom keybinds are added to provide some utility
 ## Required Packages
 These packages can be automatically installed for some distros using the following:
 ```bash
-sh install_dependecies.sh
+sh install_dependencies.sh
 ```
 
 - `niri`
