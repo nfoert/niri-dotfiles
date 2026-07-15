@@ -1,5 +1,7 @@
 # niri-dotfiles
 
+> [!IMPORTANT]
+> Since early 2026, I have been using niri with [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) instead. These dotfiles should still work well, but I don't plan to make more changes to them as of now.
 
 <div align="center">
 
